@@ -89,5 +89,11 @@ describe("Test Maha-Lap", () => {
         expect(result).toEqual(0.5);
     });
 
+    test("Test Namo with ฝันวันจันทร์ ตอนกลางวัน เห็นงู", () => {
+        global.Math.random = jest.fn(() => 0.64);
+        const result = MahaLap.namo("จันทร์", "งู", "กลางวัน");
+        expect(result).toEqual(384);
+    });
+
 
 });
