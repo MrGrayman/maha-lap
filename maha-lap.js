@@ -26,6 +26,34 @@ class MahaLap {
         }
 
     }
+
+    static tamnaiWithStory(story) {
+        const length = story.length;
+        var sum = 0;
+        for (var i = 1; i <= length; i++) {
+            sum = sum + i;
+        }
+        switch (sum) {
+            case 3:
+                return sum;
+            case 36:
+                return sum;
+            case 66:
+                return sum;
+            default:
+                "Not Match"
+        }
+
+    }
+
+    // static tamnaiWithStory(story) {
+    //     const n = story.length;
+    //     let sum = 0;
+    //     for (let i = 1; i <= n; i++) {
+    //       sum += i;
+    //     }
+    //     return sum % 100;
+    //   }
 }
 
 module.exports = MahaLap;
